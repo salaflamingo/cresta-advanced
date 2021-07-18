@@ -1,0 +1,426 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: 'Montserrat', 'Noto Sans JP', '游ゴシック', 'Yu Gothic', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+section {
+  padding: 60px 0;
+}
+.title {
+  font-size: 3.2rem;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  margin-bottom: 30px;
+  letter-spacing: 0.4rem;
+}
+.text {
+  font-size: 1.4rem;
+  font-family: '游ゴシック', 'Yu Gothic', sans-serif;
+  font-weight: bold;
+  line-height: 3.5rem;
+  padding-bottom: 15px;
+}
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 10px 4vw 0 4vw;
+}
+.site-title {
+  font-size: 2.6rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.site-title a {
+  color: #fff;
+}
+.header-svg {
+  margin: 0 10px -5px 0;
+}
+.site-title span {
+  font-size: 1.6rem;
+}
+.site-title img {
+  width: 25px;
+  height: auto;
+  margin: 0 10px 5px 0;
+}
+.nav-wrapper {
+  display: none;
+  width: 520px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.header-nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.9);
+  z-index: 10;
+}
+.header-nav .nav-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.header-nav img {
+  width: 42px;
+  height: auto;
+}
+.header-nav .nav-item a {
+  color: #fff;
+}
+.header-nav .nav-item {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.site-title a.black {
+  color: #333;
+  transition: .3s;
+}
+.site-title a .header-svg.black {
+  fill: #333;
+  transition: fill .3s;
+}
+body.noscroll {
+  overflow: hidden;
+}
+/* ハンバーガーメニュー */
+.burger-btn {
+  width: 22px;
+  height: 13px;
+  z-index: 10;
+  border: none;
+  margin-right: 10px;
+}
+.burger-btn:hover {
+  cursor: pointer;
+}
+.burger-btn.black {
+  color: #333;
+}
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.bar_top {
+  transform: translateY(-4px);
+  transition: transform .3s;
+}
+.bar_bottom {
+  transform: translateY(4px);
+  transition: transform .3s;
+}
+.burger-btn.close .bar_top {
+  transform: translateY(2px) rotate(30deg);
+  transition: transform .3s;
+}
+.burger-btn.close .bar_mid {
+  opacity: 0;
+  transition: opacity .3s;
+}
+.burger-btn.close .bar_bottom {
+  transform: translateY(-2px) rotate(-30deg);
+  transition: transform .3s;
+}
+.menu {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.bar.black {
+  background-color: #333;
+  transition: .3s;
+}
+.menu.black {
+  color: #333;
+  transition: .3s;
+}
+.burger-musk {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+/* ファーストビュー */
+.fv {
+  position: relative;
+}
+.main-copy {
+  width: 50%;
+  height: 464px;
+  background-color: #333;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-copy-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  z-index: 9;
+}
+.ja-copy {
+  font-size: 2rem;
+}
+.conpany {
+  font-size: 2rem;
+}
+.en-copy {
+  font-size: 7.2rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.main-img {
+  background-image: url(../img/about-page-top@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 75%;
+  height: 387px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* ビジョン */
+.vision-wrapper {
+  padding: 564px 0 0 25%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.sub-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+/* メッセージ */
+.message-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.ceo-img {
+  max-width: 420px;
+}
+.ceo-message {
+  width: 75%;
+  background-color: #f0f0f0;
+  margin: -210px 0 0 auto;
+}
+.message-inner {
+  width: 50%;
+  padding: 120px 185px 90px 185px;
+}
+
+/* カンパニー */
+.info-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.info-wrapper .title {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+.office-info {
+  margin-left: 25%;
+  margin-bottom: 40px;
+  width: 75%;
+}
+.office-info tr {
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 4rem;
+}
+.office-info th {
+  font-weight: bold;
+}
+.ggmap {
+  max-width: 1100px;
+  height: 360px;
+  margin-bottom: 100px;
+}
+.ggmap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* フッター */
+.footer {
+  height: 50px;
+  background-color: #707070;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1rem;
+}
+
+/* タブレット */
+@media screen and (max-width:768px) {
+
+  body {
+    line-height: 1.2;
+  }
+
+  /* ヘッダー */
+  .site-title {
+    font-size: 2rem;
+  }
+  .site-title span {
+    font-size: 1.4rem;
+  }
+  .site-title img {
+    width: 20px;
+  }
+  .nav-wrapper {
+    width: 100vw;
+  }
+  
+  /* ファーストビュー */
+  .main-copy {
+    width: 75%;
+    height: 615px;
+  }
+  .ja-copy {
+    font-size: 1.6rem;
+  }
+  .conpany {
+    font-size: 1.6rem;
+  }
+  .en-copy {
+    font-size: 5.6rem;
+    line-height: 1;
+  }
+  .main-img {
+    width: 75%;
+    height: 529px;
+  }
+
+  /* ビジョン */
+  .vision-wrapper {
+    padding: 715px 0 0 25%;
+    margin: 0 4vw;
+  }
+
+  /* メッセージ */
+  .message-wrapper {
+    margin: 0 4vw;
+  }
+  .ceo-img {
+    max-width: 320px;
+  }
+  .ceo-message {
+    width: 75%;
+    background-color: #f0f0f0;
+    margin: -110px 0 0 auto;
+  }
+  .message-inner {
+    width: 80%;
+    padding: 130px 50px 80px 50px;
+  }
+
+  /* カンパニー */
+  .info-wrapper {
+    margin: 0 4vw;
+  }
+  .ggmap {
+    max-width: 700px;
+    height: 230px;
+    margin-bottom: 80px;
+  }
+  
+
+}
+
+/* スマホ */
+@media screen and (max-width:375px) {
+
+  .text {
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  /* ファーストビュー */
+  .main-copy {
+    height: 449px;
+  }
+  .main-img {
+    height: 387px;
+  }
+  .main-copy-inner {
+    margin-left: -15%;
+  }
+
+  /* ビジョン */
+  .vision-wrapper {
+    padding: 549px 0 0 0;
+    margin: 0 4vw;
+  }
+  
+  /* メッセージ */
+  .message-wrapper {
+    margin: 0;
+  }
+  .ceo-img {
+    max-width: 340px;
+    width: 90%;
+  }
+  .ceo-message {
+    width: 95%;
+    background-color: #f0f0f0;
+    margin: -110px auto 0;
+  }
+  .message-inner {
+    width: 95%;
+    padding: 130px 10px 80px 10px;
+  }
+  
+  /* カンパニー */
+  .office-info {
+    margin-left: 0;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,419 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: 'Montserrat', 'Noto Sans JP', '游ゴシック', 'Yu Gothic', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+section {
+  padding: 60px 0;
+}
+.title {
+  font-size: 3.2rem;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  margin-bottom: 30px;
+  letter-spacing: 0.4rem;
+}
+.text {
+  font-size: 1.6rem;
+  font-family: 'Noto Sans JP';
+  padding-bottom: 15px;
+}
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 10px 4vw 0 4vw;
+}
+.site-title {
+  font-size: 2.6rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.site-title a {
+  color: #fff;
+}
+.header-svg {
+  margin: 0 10px -5px 0;
+}
+.site-title span {
+  font-size: 1.6rem;
+}
+.site-title img {
+  width: 25px;
+  height: auto;
+  margin: 0 10px 5px 0;
+}
+.nav-wrapper {
+  display: none;
+  width: 520px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.header-nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.9);
+  z-index: 10;
+}
+.header-nav .nav-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.header-nav img {
+  width: 42px;
+  height: auto;
+}
+.header-nav .nav-item a {
+  color: #fff;
+}
+.header-nav .nav-item {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.site-title a.black {
+  color: #333;
+  transition: .3s;
+}
+.site-title a .header-svg.black {
+  fill: #333;
+  transition: fill .3s;
+}
+body.noscroll {
+  overflow: hidden;
+}
+/* ハンバーガーメニュー */
+.burger-btn {
+  width: 22px;
+  height: 13px;
+  z-index: 10;
+  border: none;
+  margin-right: 10px;
+}
+.burger-btn:hover {
+  cursor: pointer;
+}
+.burger-btn.black {
+  color: #333;
+}
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.bar_top {
+  transform: translateY(-4px);
+  transition: transform .3s;
+}
+.bar_bottom {
+  transform: translateY(4px);
+  transition: transform .3s;
+}
+.burger-btn.close .bar_top {
+  transform: translateY(2px) rotate(30deg);
+  transition: transform .3s;
+}
+.burger-btn.close .bar_mid {
+  opacity: 0;
+  transition: opacity .3s;
+}
+.burger-btn.close .bar_bottom {
+  transform: translateY(-2px) rotate(-30deg);
+  transition: transform .3s;
+}
+.menu {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.bar.black {
+  background-color: #333;
+  transition: .3s;
+}
+.menu.black {
+  color: #333;
+  transition: .3s;
+}
+.burger-musk {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+/* ファーストビュー */
+.fv {
+  position: relative;
+}
+.main-copy {
+  width: 50%;
+  height: 464px;
+  background-color: #333;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-copy-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  z-index: 9;
+}
+.ja-copy {
+  font-size: 2rem;
+}
+.conpany {
+  font-size: 2rem;
+}
+.en-copy {
+  font-size: 7.2rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.main-img {
+  background-image: url(../img/contact-page-top@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 75%;
+  height: 387px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* お問い合わせ */
+.form-wrapper {
+  padding-top: 564px;
+  max-width: 700px;
+  margin: 0 auto 120px;
+}
+.form-list {
+  padding-top: 50px;
+}
+.radio-list {
+  display: flex;
+}
+.radio-item {
+  font-family: 'Noto Sans JP';
+  margin-right: 40px;
+}
+.radio-item input {
+  margin-right: 10px;
+}
+.form-item {
+  margin-bottom: 30px;
+}
+.form-label {
+  display: block;
+  padding-bottom: 10px;
+  font-family: 'Noto Sans JP';
+}
+.form-label span {
+  display: inline-block;
+  width: 30px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #fff;
+  margin-left: 20px;
+  text-align: center;
+}
+.input-text {
+  line-height: 30px;
+}
+.input-text,
+textarea {
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #141414;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.privacy-policy {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.privacy-policy-text {
+  border: 1px solid #141414;
+  height: 252px;
+  padding: 10px;
+  margin-bottom: 40px;
+  overflow: scroll;
+}
+.agree-checkbox {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.agree-checkbox input{
+  margin-right: 15px;
+}
+.submit-btn {
+  display: block;
+  width: 160px;
+  height: 36px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 auto;
+}
+.submit-btn:hover {
+  opacity: .7;
+  transition: .3s;
+}
+
+
+
+/* フッター */
+.footer {
+  height: 50px;
+  background-color: #707070;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1rem;
+}
+
+/* タブレット */
+@media screen and (max-width:768px) {
+
+  body {
+    line-height: 1.2;
+  }
+
+  /* ヘッダー */
+  .site-title {
+    font-size: 2rem;
+  }
+  .site-title span {
+    font-size: 1.4rem;
+  }
+  .site-title img {
+    width: 20px;
+  }
+  .nav-wrapper {
+    width: 100vw;
+  }
+  
+  /* ファーストビュー */
+  .main-copy {
+    width: 75%;
+    height: 615px;
+  }
+  .ja-copy {
+    font-size: 1.6rem;
+  }
+  .conpany {
+    font-size: 1.6rem;
+  }
+  .en-copy {
+    font-size: 5.6rem;
+    line-height: 1;
+  }
+  .main-img {
+    width: 75%;
+    height: 529px;
+  }
+
+  /* コンタクト */
+  .form-wrapper {
+  padding-top: 715px;
+  max-width: 668px;
+  margin: 0 4vw 200px;
+  }
+  .privacy-policy-text {
+    height: 226px;
+  }
+
+
+}
+
+/* スマホ */
+@media screen and (max-width:375px) {
+
+  .text {
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  /* ファーストビュー */
+  .main-copy {
+    height: 449px;
+  }
+  .main-img {
+    height: 387px;
+  }
+  .main-copy-inner {
+    margin-left: -15%;
+  }
+
+  /* コンタクト */
+  .form-wrapper {
+    padding: 549px 0 0 0;
+    margin: 0 4vw 80px;
+  }
+  .radio-list {
+  display: block;
+  }
+  .radio-item {
+    padding-bottom: 10px;
+  }
+
+  .privacy-policy-text {
+    font-size: 1.4rem;
+  }
+  .agree-checkbox label{
+    font-size: 1.4rem;
+  }
+  
+
+}
