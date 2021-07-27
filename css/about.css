@@ -253,7 +253,7 @@ body.noscroll {
 }
 .message-inner {
   width: 50%;
-  padding: 120px 185px 90px 185px;
+  padding: 120px 150px 90px 190px;
 }
 
 /* カンパニー */
@@ -261,7 +261,10 @@ body.noscroll {
   max-width: 1100px;
   margin: 0 auto;
 }
-.info-wrapper .title {
+.info-inner {
+  margin: 0 4vw;
+}
+.info-inner .title {
   border-bottom: 1px solid #f0f0f0;
   padding-bottom: 20px;
 }
@@ -280,7 +283,7 @@ body.noscroll {
 .ggmap {
   max-width: 1100px;
   height: 360px;
-  margin-bottom: 100px;
+  margin: 0 4vw 100px 4vw;
 }
 .ggmap iframe {
   width: 100%;
