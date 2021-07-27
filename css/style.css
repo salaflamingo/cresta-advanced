@@ -48,6 +48,7 @@ a {
 }
 .btn a {
   color: #fff;
+  display: block;
 }
 
 /* ヘッダー */
@@ -381,19 +382,6 @@ body.noscroll {
   /* アバウト */
   .about-wrapper {
     padding-top: 1124px;
-  }
-  .about-text {
-    height: 479px;
-  }
-  .about-text-inner {
-    max-width: 590px;
-    width: 100%;
-    height: 279px;
-    padding: 40px 30px;
-    margin: 4vw auto;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
   }
   .about-text-inner .text {
     padding-bottom: 30px;
