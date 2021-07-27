@@ -239,21 +239,28 @@ body.noscroll {
 }
 
 /* メッセージ */
-.message-wrapper {
-  max-width: 1100px;
+#message {
+  max-width: 1140px;
   margin: 0 auto;
+}
+.message-wrapper {
+  padding: 0 20px;
 }
 .ceo-img {
   max-width: 420px;
+  width: 75%;
 }
 .ceo-message {
   width: 75%;
   background-color: #f0f0f0;
-  margin: -210px 0 0 auto;
+  margin-top: -150px;
+  margin-left: auto;
 }
 .message-inner {
-  width: 50%;
-  padding: 120px 150px 90px 190px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 170px;
+  padding-bottom: 50px;
 }
 
 /* カンパニー */
@@ -317,9 +324,6 @@ body.noscroll {
   .site-title img {
     width: 20px;
   }
-  .nav-wrapper {
-    width: 100vw;
-  }
   
   /* ファーストビュー */
   .main-copy {
@@ -348,20 +352,8 @@ body.noscroll {
   }
 
   /* メッセージ */
-  .message-wrapper {
-    margin: 0 4vw;
-  }
-  .ceo-img {
-    max-width: 320px;
-  }
-  .ceo-message {
-    width: 75%;
-    background-color: #f0f0f0;
-    margin: -110px 0 0 auto;
-  }
   .message-inner {
     width: 80%;
-    padding: 130px 50px 80px 50px;
   }
 
   /* カンパニー */
@@ -403,22 +395,6 @@ body.noscroll {
   }
   
   /* メッセージ */
-  .message-wrapper {
-    margin: 0;
-  }
-  .ceo-img {
-    max-width: 340px;
-    width: 90%;
-  }
-  .ceo-message {
-    width: 95%;
-    background-color: #f0f0f0;
-    margin: -110px auto 0;
-  }
-  .message-inner {
-    width: 95%;
-    padding: 130px 10px 80px 10px;
-  }
   
   /* カンパニー */
   .office-info {
